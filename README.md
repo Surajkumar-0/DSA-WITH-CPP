@@ -1,4 +1,3 @@
-++, including notes, coding exercises, problem-solving, and practice questions.
 
 
 # Chapter 0 - Introduction to C++
