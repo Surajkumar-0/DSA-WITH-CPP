@@ -1,5 +1,4 @@
-# DSA-WITH-CPP
-My Data Structures and Algorithms journey in C++, including notes, coding exercises, problem-solving, and practice questions.
+++, including notes, coding exercises, problem-solving, and practice questions.
 
 
 # Chapter 0 - Introduction to C++
