@@ -98,6 +98,264 @@ Namsate Duniya :-)
 
 ---
 
+# 📌 C++ Variables and Data Types
+
+## 1. What is a Variable?
+
+A **variable** is a named memory location used to store data.
+
+Example:
+
+```cpp
+int age = 20;
+```
+
+Here:
+
+- `int` → Data Type
+- `age` → Variable Name
+- `20` → Value
+
+### Basic Syntax
+
+```cpp
+data_type variable_name = value;
+```
+
+Example:
+
+```cpp
+int age = 20;
+```
+
+---
+
+## 2. Common Data Types in C++
+
+C++ provides different data types to store different kinds of values.
+
+| Data Type | Used For | Example |
+|-----------|----------|---------|
+| `int` | Whole numbers | `20` |
+| `float` | Decimal numbers | `85.5f` |
+| `double` | More precise decimal numbers | `50000.99` |
+| `char` | Single character | `'A'` |
+| `bool` | True/False | `true` |
+| `string` | Text | `"Rahul"` |
+
+---
+
+## 3. Integer (`int`)
+
+The `int` data type is used to store **whole numbers**.
+
+```cpp
+int age = 20;
+```
+
+Examples:
+
+```cpp
+int marks = 90;
+int number = -10;
+```
+
+---
+
+## 4. Float (`float`)
+
+The `float` data type is used to store **decimal numbers**.
+
+```cpp
+float marks = 85.5;
+```
+
+Example:
+
+```cpp
+float temperature = 36.5;
+```
+
+---
+
+## 5. Double (`double`)
+
+`double` is also used for decimal numbers and generally provides **more precision than `float`**.
+
+```cpp
+double salary = 50000.99;
+```
+
+Example:
+
+```cpp
+double pi = 3.1415926535;
+```
+
+---
+
+## 6. Character (`char`)
+
+The `char` data type stores **a single character**.
+
+Characters are written inside **single quotes (`' '`)**.
+
+```cpp
+char grade = 'A';
+```
+
+Examples:
+
+```cpp
+char gender = 'M';
+char symbol = '#';
+```
+
+---
+
+## 7. Boolean (`bool`)
+
+The `bool` data type stores only two values:
+
+- `true`
+- `false`
+
+Example:
+
+```cpp
+bool isPass = true;
+```
+
+By default, `cout` prints:
+
+```text
+true  → 1
+false → 0
+```
+
+---
+
+## 8. String (`string`)
+
+The `string` data type is used to store **text or a sequence of characters**.
+
+For using `string`, we include:
+
+```cpp
+#include <string>
+```
+
+Example:
+
+```cpp
+string name = "Rahul";
+```
+
+Strings use **double quotes (`" "`)**.
+
+---
+
+## 9. Printing Variables
+
+We can use `cout` to print variables.
+
+```cpp
+cout << "Age: " << age << endl;
+```
+
+Multiple variables can also be printed:
+
+```cpp
+cout << "Name: " << name << endl;
+cout << "Age: " << age << endl;
+cout << "Marks: " << marks << endl;
+```
+
+---
+
+## 10. Complete Example
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int age = 20;
+    float marks = 85.5;
+    double salary = 50000.99;
+    char grade = 'A';
+    bool isPass = true;
+    string name = "Rahul";
+
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Marks: " << marks << endl;
+    cout << "Salary: " << salary << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Passed: " << isPass << endl;
+
+    return 0;
+}
+```
+
+### Output
+
+```text
+Name: Rahul
+Age: 20
+Marks: 85.5
+Salary: 50000.99
+Grade: A
+Passed: 1
+```
+
+---
+
+## ⭐ Important Points
+
+- A variable stores a value in memory.
+- Every variable has a **data type**.
+- `int` → whole numbers
+- `float` → decimal numbers
+- `double` → high-precision decimal numbers
+- `char` → single character
+- `bool` → `true` or `false`
+- `string` → text
+- `cout` is used to display output.
+- `endl` moves the cursor to the next line.
+
+---
+
+## 🔥 Quick Revision
+
+```cpp
+int age = 20;              // Integer
+float marks = 85.5;        // Decimal
+double salary = 50000.99;  // More precision
+char grade = 'A';          // Character
+bool isPass = true;        // Boolean
+string name = "Rahul";     // String
+```
+
+### Basic Formula
+
+```text
+Data Type + Variable Name + Value
+```
+
+Example:
+
+```cpp
+int age = 20;
+```
+
+**int** → What type of data?
+
+**age** → Where/name of the variable?
+
+**20** → What value is stored?
 
 ---
 
