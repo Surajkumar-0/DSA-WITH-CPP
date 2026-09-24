@@ -359,4 +359,285 @@ int age = 20;
 
 ---
 
+# 📌 C++ User Input
+
+## 1. What is User Input?
+
+**User input** means taking data from the user during program execution.
+
+In C++, we use **`cin`** to take input from the user.
+
+`cin` stands for **Character Input**.
+
+---
+
+## 2. Basic Syntax
+
+```cpp
+cin >> variable;
+```
+
+Example:
+
+```cpp
+int age;
+
+cin >> age;
+```
+
+The user enters a value, and that value is stored in the `age` variable.
+
+---
+
+## 3. Taking Integer Input
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Your age is: " << age;
+
+    return 0;
+}
+```
+
+### Example Output
+
+```text
+Enter your age: 20
+Your age is: 20
+```
+
+---
+
+## 4. Taking Multiple Inputs
+
+We can take multiple values using `cin`.
+
+```cpp
+int age;
+float marks;
+
+cin >> age >> marks;
+```
+
+Example:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    float marks;
+
+    cout << "Enter age and marks: ";
+    cin >> age >> marks;
+
+    cout << "Age: " << age << endl;
+    cout << "Marks: " << marks << endl;
+
+    return 0;
+}
+```
+
+---
+
+## 5. Taking String Input
+
+For a single word, we can use:
+
+```cpp
+string name;
+
+cin >> name;
+```
+
+Example:
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string name;
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Hello " << name;
+
+    return 0;
+}
+```
+
+### Example
+
+```text
+Enter your name: Rahul
+Hello Rahul
+```
+
+### ⚠️ Important
+
+`cin >> name` reads only **one word**.
+
+If the user enters:
+
+```text
+Rahul Kumar
+```
+
+then `cin` will normally read only:
+
+```text
+Rahul
+```
+
+For a complete sentence or name containing spaces, we use `getline()`.
+
+---
+
+## 6. Taking Character Input
+
+```cpp
+char grade;
+
+cin >> grade;
+```
+
+Example:
+
+```cpp
+cout << "Enter your grade: ";
+cin >> grade;
+```
+
+---
+
+## 7. Taking Boolean Input
+
+A `bool` variable can store `true` or `false`.
+
+```cpp
+bool isPass;
+
+cin >> isPass;
+```
+
+Normally, entering:
+
+```text
+1
+```
+
+means `true`, and:
+
+```text
+0
+```
+
+means `false`.
+
+---
+
+## 8. Complete Example
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int age;
+    float marks;
+    char grade;
+    string name;
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Enter your marks: ";
+    cin >> marks;
+
+    cout << "Enter your grade: ";
+    cin >> grade;
+
+    cout << "\n--- Student Details ---" << endl;
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Marks: " << marks << endl;
+    cout << "Grade: " << grade << endl;
+
+    return 0;
+}
+```
+
+---
+
+## ⭐ Important Points
+
+- `cin` is used to take input from the user.
+- `>>` is called the **extraction operator**.
+- The input is stored inside a variable.
+- Multiple inputs can be taken using one `cin`.
+- `cin >> name` reads only up to whitespace.
+- `getline()` is used when input may contain spaces.
+
+---
+
+## 🔥 Quick Revision
+
+```cpp
+int age;
+cin >> age;
+```
+
+```cpp
+float marks;
+cin >> marks;
+```
+
+```cpp
+char grade;
+cin >> grade;
+```
+
+```cpp
+string name;
+cin >> name;
+```
+
+### Basic Pattern
+
+```text
+Declare Variable
+       ↓
+     cin >>
+       ↓
+    Variable
+```
+
+Example:
+
+```cpp
+int age;
+cin >> age;
+```
+
+
 🚀 Beginning of my C++ + DSA Journey.
